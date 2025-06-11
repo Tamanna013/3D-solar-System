@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading Solar System...</p>
+    </div>
+
+    <div id="app">
+        <!-- Three.js Canvas Container -->
+        <div id="canvas-container"></div>
+
+        <!-- Control Panel -->
+        <div id="control-panel" class="panel">
+            <div class="panel-header">
+                <h3>Solar System Controls</h3>
+                <button id="toggle-panel" class="toggle-btn">−</button>
+            </div>
+            
+            <div class="panel-content">
+                <!-- Main Controls -->
+                <div class="control-group">
+                    <button id="play-pause-btn" class="control-btn">⏸️ Pause</button>
+                    <button id="theme-toggle" class="control-btn">🌙 Dark Mode</button>
+                    <button id="reset-camera" class="control-btn">📷 Reset View</button>
+                </div>
+
+                <!-- Global Speed Control -->
+                <div class="control-group">
+                    <label for="global-speed">Global Speed: <span id="global-speed-value">1.0x</span></label>
+                    <input type="range" id="global-speed" min="0" max="5" step="0.1" value="1">
+                </div>
+
+                <!-- Planet Speed Controls -->
+                <div class="planet-controls">
+                    <h4>Individual Planet Speeds</h4>
+                    <div id="planet-sliders"></div>
+                </div>
+
+                <!-- Camera Controls -->
+                <div class="control-group">
+                    <h4>Camera Controls</h4>
+                    <button id="zoom-in" class="control-btn">🔍+ Zoom In</button>
+                    <button id="zoom-out" class="control-btn">🔍− Zoom Out</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Panel -->
+        <div id="info-panel" class="info-panel">
+            <div id="planet-info">
+                <h4 id="planet-name">Solar System</h4>
+                <p id="planet-description">Click on a planet to learn more about it!</p>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div id="instructions" class="instructions">
+            <p>🖱️ Click and drag to rotate • 🔍 Scroll to zoom • 🪐 Click planets for info</p>
+        </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
