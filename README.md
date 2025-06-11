@@ -119,38 +119,6 @@ To add new celestial bodies, modify the `planetData` array in `script.js`:
 - **Shadow Quality**: Modify shadow map resolution
 - **Geometry Detail**: Change sphere geometry segments for planets
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Black Screen or No Display**
-- Ensure WebGL is supported and enabled in your browser
-- Update graphics drivers
-- Try a different browser
-
-**Poor Performance**
-- Close other browser tabs
-- Reduce global speed setting
-- Disable shadows on older devices
-
-**Controls Not Working**
-- Check if JavaScript is enabled
-- Ensure you're using a supported browser
-- Try refreshing the page
-
-### Debug Mode
-Add `?debug=true` to the URL to enable performance monitoring and console logging.
-
-## 📄 File Structure
-
-\```
-solar-system/
-├── index.html          # Main HTML file
-├── style.css           # Styling and responsive design
-├── script.js           # Three.js logic and interactions
-└── README.md           # This documentation
-\```
-
 ## 🤝 Contributing
 
 Feel free to contribute improvements:
@@ -159,19 +127,3 @@ Feel free to contribute improvements:
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## 📜 License
-
-This project is open source and available under the MIT License.
-
-## 🙏 Acknowledgments
-
-- **Three.js Community**: For the amazing 3D library
-- **NASA**: For planetary data and inspiration
-- **Astronomy Community**: For accurate solar system information
-
----
-
-**Enjoy exploring the cosmos! 🌌**
-
-For questions or suggestions, please open an issue or contact the developer.
